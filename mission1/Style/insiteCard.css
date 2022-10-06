@@ -1,0 +1,8 @@
+:root {
+  --card-width: 15.625rem;
+}
+
+.insite-card-container li {
+  width: var(--card-width);
+  border: 1px solid red;
+}

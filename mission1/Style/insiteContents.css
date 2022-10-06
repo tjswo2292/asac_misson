@@ -1,0 +1,16 @@
+:root {
+  --container-width: 66.25rem;
+}
+.insite-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+.insite-contents .insite-contents-container {
+  text-align: center;
+  width: var(--container-width);
+  margin-bottom: 1.25rem;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
