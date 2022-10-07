@@ -1,13 +1,16 @@
 :root {
   --container-width: 66.25rem;
 }
-.insite-contents {
+.insight-content-wrap {
+  width: 66.25rem;
+}
+.insight-contents {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
 }
-.insite-contents .insite-contents-container {
+.insight-contents .insight-contents-container {
   text-align: center;
   width: var(--container-width);
   margin-bottom: 1.25rem;

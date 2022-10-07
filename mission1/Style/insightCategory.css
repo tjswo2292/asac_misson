@@ -1,14 +1,14 @@
-.insite-category-container {
+.insight-category-container {
   display: flex;
   justify-content: space-between;
   width: 66.25rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 2rem;
 }
-.insite-category-container .insite-item {
+.insight-category-container .insight-item {
   padding: 0.625rem 1.05rem;
   border-radius: 1.563rem;
   border: 1px solid;
 }
-.insite-category-container .insite-item:nth-child(10) {
+.insight-category-container .insight-item:nth-child(10) {
   margin-right: 1.25rem;
 }
