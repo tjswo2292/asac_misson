@@ -1,0 +1,36 @@
+:root {
+  --margin-interval: 3.75rem;
+}
+.subscribe {
+  background-color: #f7f7f7;
+  margin-top: var(--margin-interval);
+  padding: var(--margin-interval) 0;
+}
+.subscribe .subscribe-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 66.25rem;
+}
+.subscribe .subscribe-container .subscribe-des {
+  margin-top: 25px;
+}
+.subscribe .subscribe-container .subscribe-des p:first-child {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+.subscribe .subscribe-container .subscribe-des p:last-child {
+  font-size: 0.875rem;
+  line-height: 2.5;
+}
+.subscribe .subscribe-des button {
+  display: inline-block;
+  width: 16.25rem;
+  height: 3.125rem;
+  margin-top: 1.563rem;
+  border-radius: 1.563rem;
+  background-color: #36f;
+  color: #f7f7f7;
+  font-size: 1rem;
+  font-weight: bold;
+}
