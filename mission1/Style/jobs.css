@@ -1,0 +1,41 @@
+.jobs {
+  margin: 3.75rem 0;
+}
+.jobs-container {
+  margin: 0 auto;
+  width: 66.25rem;
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+.jobs .jobs-container .jobs-title {
+  margin-bottom: 1.875rem;
+}
+.jobs .jobs-container ul {
+  display: flex;
+}
+.jobs .jobs-container ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 267.5px;
+  height: 100px;
+  border: 1px solid #eee;
+}
+.jobs .jobs-container ul li:nth-child(2) {
+  border-left: none;
+}
+.jobs .jobs-container ul li:nth-child(3) {
+  border-left: none;
+}
+.jobs .jobs-container ul li:nth-child(4) {
+  border-left: none;
+}
+.jobs .jobs-container ul li button .jobs-icon-box i {
+  font-size: 2rem;
+}
+.jobs .jobs-container ul li button p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.813rem;
+}

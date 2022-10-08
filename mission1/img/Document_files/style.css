@@ -1,0 +1,77 @@
+/* margin, padding 오른쪽 기준 */
+:root {
+  --header-font-size: 0.875rem;
+  --icon-padding-right: 0.625rem;
+  --header-icon-size: 1.125rem;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid #888;
+}
+main {
+  margin-top: 6.25rem;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 66.25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.header-container .bar-logo-contaienr {
+  display: flex;
+  align-items: center;
+}
+.header-container .bar-logo-contaienr .bar-btn {
+  margin-right: 0.625rem;
+}
+.header-container .bar-logo-contaienr .logo-container span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-container .header-menu {
+  display: flex;
+  align-items: center;
+  font-size: var(--header-font-size);
+}
+.header-container .header-menu li a {
+  padding: 0.938rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header-container .icon-company-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15.688rem;
+}
+.header-container .icon-company-container .header-icon {
+  display: flex;
+}
+.header-container .icon-company-container .header-icon li {
+  padding-right: var(--icon-padding-right);
+}
+.header-container .icon-company-container .header-icon li a i {
+  font-size: var(--header-icon-size);
+}
+.header-container .icon-company-container .company-service-btn {
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.header-container .icon-company-container .company-service-btn button {
+  color: #666;
+}

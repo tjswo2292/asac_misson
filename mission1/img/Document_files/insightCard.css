@@ -1,0 +1,58 @@
+:root {
+  --card-width: 15.625rem;
+}
+.insight-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 66.25rem;
+  margin-bottom: 2.5rem;
+}
+.insight-card-container li {
+  width: 24%;
+}
+.insight-card-container .card-img-container {
+  border-radius: 0.313rem;
+}
+.insight-card-container .card-img-container img {
+  border-radius: 0.313rem;
+}
+.insight-card-container .card-description {
+  margin: 1.125rem 0;
+}
+.insight-card-container .card-description p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.insight-card-container .card-description span {
+  font-size: 0.813rem;
+  line-height: 1.5;
+}
+.insight-card-container .card-info-container {
+  display: flex;
+  align-items: center;
+}
+.insight-card-container .card-info-container .youtube-icon {
+  padding: 5px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+}
+.insight-card-container .card-info-container i {
+  color: red;
+}
+.insight-card-container .card-info-container span {
+  font-size: 0.813rem;
+  margin-left: 0.375rem;
+}
+.insight-show-more .insight-show-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 3.75rem;
+  width: 21.563rem;
+  height: 3.125rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 1.563rem;
+}

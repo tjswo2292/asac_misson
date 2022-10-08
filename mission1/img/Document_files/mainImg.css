@@ -1,0 +1,12 @@
+.main-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.main-img-container {
+  width: 66.25rem;
+  border-radius: 0.625rem;
+}
+.main-img .main-img-container img {
+  border-radius: 0.625rem;
+}
