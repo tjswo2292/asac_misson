@@ -1,0 +1,18 @@
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 66.25rem;
+}
+.article-container .title {
+  text-align: center;
+  margin-bottom: 1.438rem;
+}
+.article-container .title p {
+  font-size: 1.375rem;
+  margin-bottom: 0.25rem;
+}
+.article-container .title .show-more {
+  font-size: 0.938rem;
+}

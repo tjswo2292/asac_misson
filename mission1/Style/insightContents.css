@@ -1,14 +1,15 @@
 :root {
   --container-width: 66.25rem;
 }
-.insight-content-wrap {
-  width: 66.25rem;
-}
 .insight-contents {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+}
+.insight-contents-wrap {
+  margin-bottom: 3.125rem;
+  border-bottom: 1px solid #e1e2e3;
 }
 .insight-contents .insight-contents-container {
   text-align: center;

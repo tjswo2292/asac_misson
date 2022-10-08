@@ -4,14 +4,23 @@
   --icon-padding-right: 0.625rem;
   --header-icon-size: 1.125rem;
 }
-
 * {
   box-sizing: border-box;
 }
+body {
+  position: relative;
+}
 header {
+  position: fixed;
+  top: 0;
   display: flex;
+  width: 100%;
   justify-content: center;
-  border-bottom: 1px solid #999;
+  background-color: #fff;
+  border-bottom: 1px solid #888;
+}
+main {
+  margin-top: 6.25rem;
 }
 .header-container {
   display: flex;

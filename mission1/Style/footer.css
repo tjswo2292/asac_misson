@@ -1,0 +1,30 @@
+/* grid가 적합하다 */
+:root {
+  --margin-right: 45px;
+}
+footer {
+  border-top: 1px solid #888;
+}
+.footer-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1.688rem;
+  width: 66.25rem;
+}
+.footer-container .introduce-container {
+  display: flex;
+  align-items: center;
+}
+.footer-container .introduce-container .img-box {
+  margin-right: 4.375;
+}
+.footer-container .introduce-container li {
+  margin-right: var(--margin-right);
+}
+.footer-container .introduce-company {
+  font-size: 0.75rem;
+  color: #888;
+}
