@@ -33,6 +33,20 @@ main {
 .header-container .bar-logo-contaienr {
   display: flex;
   align-items: center;
+  position: relative;
+}
+.header-container .bar-logo-contaienr .dimmed {
+  display: none;
+  z-index: 999;
+  position: absolute;
+  top: 25px;
+}
+.header-container .bar-logo-contaienr .dimmed li {
+  padding: 17px;
+  width: 180px;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: bold;
 }
 .header-container .bar-logo-contaienr .bar-btn {
   margin-right: 0.625rem;
