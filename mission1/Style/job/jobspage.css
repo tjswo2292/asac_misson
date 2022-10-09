@@ -1,0 +1,238 @@
+:root {
+  --init-width: 66.25rem;
+  --develop-font-size: 1.5rem;
+}
+.job-category {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 1.25rem;
+}
+.job-category-container {
+  margin: 0 auto;
+  width: var(--init-width);
+}
+.job-category-container .job-choice {
+  margin-bottom: 1.25rem;
+}
+.job-category-container .choice-category {
+  display: flex;
+}
+.job-category-container .choice-category .develop,
+.develop-all {
+  display: flex;
+  align-items: center;
+  font-size: var(--develop-font-size);
+}
+.job-category-container .choice-category .develop {
+  font-weight: bold;
+  border-right: 1px solid #ececec;
+}
+.job-category-container .choice-category .develop-all {
+  border-left: 1px solid #ececec;
+}
+.job-category-container .choice-category .develop button {
+  margin-left: 0.625rem;
+  margin-right: 1.563rem;
+  font-size: var(--develop-font-size);
+  border-radius: 50%;
+}
+.job-category-container .choice-category .develop-all span {
+  margin-left: 1.563rem;
+}
+.job-category-container .choice-category .develop-all button {
+  margin-left: 0.625rem;
+  font-size: var(--develop-font-size);
+  border-radius: 50%;
+}
+.job-category-container .job-choice .skill-category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+.job-category-container .job-choice .skill-category .detail-skill-list {
+  display: flex;
+}
+.job-category-container .job-choice .skill-category .detail-skill-list li {
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+.job-category-container
+  .job-choice
+  .skill-category
+  .detail-skill-list
+  li:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.963rem;
+  height: 2.5rem;
+  border: 1px solid #ececec;
+}
+.job-category-container
+  .job-choice
+  .skill-category
+  .detail-skill-list
+  li:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.963rem;
+  height: 2.5rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  border: 1px solid #ececec;
+}
+.job-category-container
+  .job-choice
+  .skill-category
+  .detail-skill-list
+  li:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.963rem;
+  height: 2.5rem;
+  border: 1px solid #ececec;
+}
+.rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ececec;
+  border-radius: 0.25rem;
+  width: 6.5rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+}
+.job-category-container .welfware-choice-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1.25rem;
+  width: var(--init-width);
+  border-top: 1px solid #ececec;
+}
+.job-category-container .welfware-choice-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  border-radius: 1.25rem;
+  background-color: #f3f2fb;
+}
+.job-category-container .welfware-choice-list li span {
+  font-size: 0.813rem;
+  padding: 0.625rem;
+}
+
+/* -------------------------------------------------------------- */
+
+.show-job-container {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  width: var(--init-width);
+}
+.show-job-container .bookmark-box {
+  font-size: 0.938rem;
+  color: #36f;
+}
+.show-job-container .bookmark-box i {
+  margin-right: 0.25rem;
+}
+.show-job-container .show-job-title {
+  margin: 1.25rem 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+.show-job-container .recruit-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.show-job-container .recruit-list li {
+  position: relative;
+  width: 12.313rem;
+  height: 16.938rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ececec;
+}
+.show-job-container .recruit-list li .recruit-img-box {
+  width: 12.313rem;
+  height: 9.188rem;
+  border-radius: 0.25rem;
+}
+.show-job-container .recruit-list li .recruit-img-box img {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.show-job-container .recruit-list li .company-logo-img-box {
+  z-index: 100;
+  position: absolute;
+  top: 7.5rem;
+  left: 1rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 1px solid #ececec;
+}
+.show-job-container .recruit-list .company-desc {
+  margin-top: 2.25rem;
+  margin-left: 1rem;
+}
+.show-job-container .recruit-list p:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.show-job-container .recruit-list p:last-child {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #999;
+}
+.show-job-container .company-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.show-job-container .company-list li {
+  width: 15.625rem;
+  height: 22.856rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.show-job-container .company-list li .company-img-box {
+  border-radius: 0.25rem;
+}
+.show-job-container .company-list li .company-img-box img {
+  border-radius: inherit;
+}
+.show-job-container .company-list li .company-desc-container {
+  margin-top: 0.313rem;
+}
+.show-job-container .company-list li .company-desc-container p:first-child {
+  line-height: 1.5;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.show-job-container .company-list li .company-desc-container .company-name {
+  margin: 0.25rem;
+  margin-left: 0;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.show-job-container .company-list li .company-desc-container .contact span {
+  padding: 0 0.313rem;
+  border: 1px solid #00aead;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+  color: #00aead;
+}
+.show-job-container .company-list li .company-desc-container .company-location {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+  font-size: 0.875rem;
+  color: #999;
+}
+.show-job-container .company-list li .company-desc-container .compensation {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
