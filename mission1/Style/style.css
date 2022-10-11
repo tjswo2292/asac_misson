@@ -11,6 +11,7 @@ body {
   position: relative;
 }
 header {
+  z-index: 999;
   position: fixed;
   top: 0;
   display: flex;
@@ -77,15 +78,24 @@ main {
 .header-container .icon-company-container .header-icon li {
   padding-right: var(--icon-padding-right);
 }
+.header-container .icon-company-container .header-icon li:last-child {
+  display: flex;
+  align-items: center;
+  margin-left: 0.625rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #333;
+}
 .header-container .icon-company-container .header-icon li a i {
   font-size: var(--header-icon-size);
 }
 .header-container .icon-company-container .company-service-btn {
-  border: 1px solid #666;
-  border-radius: 10px;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.938rem;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 .header-container .icon-company-container .company-service-btn button {
+  border-radius: inherit;
   color: #666;
 }
