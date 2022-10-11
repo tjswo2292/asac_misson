@@ -2,10 +2,29 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  border: 1px solid;
 }
 .main-img-container {
   display: flex;
   border-radius: 0.625rem;
+}
+.main-img-container li {
+  display: flex;
+  align-items: center;
+}
+.main-img-container li .prev-img-btn {
+  margin-right: 0.625rem;
+}
+.main-img-container li .next-img-btn {
+  margin-left: 0.625rem;
+}
+.main-img-container li .prev-img-btn,
+.next-img-btn {
+  width: 1.875rem;
+  height: 3.75rem;
+  opacity: 0.5;
+  border-radius: 0.938rem;
+  background-color: blue;
 }
 .main-img .main-img-container img {
   border-radius: 0.625rem;
