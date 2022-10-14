@@ -5,6 +5,7 @@ const $loginModalContainer = document.querySelector(".login-modal-container");
 const $modalCloseBtn = document.querySelector("#modalCloseBtn");
 const $continueEmail = document.querySelector("#continueEmail");
 const $pwModalWrap = document.querySelector(".pw-modal-wrap");
+const $pwModalCloseBtn = document.querySelector("#pwModalCloseBtn");
 
 function showLogin(e) {
   $modalBack.style.display = "block";
@@ -13,7 +14,9 @@ function showLogin(e) {
 function closeModal() {
   $modalBack.style.display = "none";
 }
-
+function closePwModal() {
+  $modalBack.style.display = "none";
+}
 function inputPw(e) {
   e.preventDefault();
   $loginModalContainer.style.display = "none";
@@ -22,6 +25,7 @@ function inputPw(e) {
 
 $signUp.addEventListener("click", showLogin);
 $modalCloseBtn.addEventListener("click", closeModal);
+$pwModalCloseBtn.addEventListener("click", closePwModal);
 $continueEmail.addEventListener("click", inputPw);
 
 // #FEE500

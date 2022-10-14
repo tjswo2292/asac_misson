@@ -152,7 +152,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
-.pw-modal-wrap .pw-modal-container #modalCloseBtn {
+.pw-modal-wrap .pw-modal-container #pwModalCloseBtn {
   display: inline;
   position: absolute;
   top: 0;
