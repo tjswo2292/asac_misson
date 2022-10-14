@@ -7,11 +7,280 @@
 * {
   box-sizing: border-box;
 }
+/* 회원가입 modal을 위해 position속성 부여 */
 body {
   position: relative;
 }
-header {
+#modalBackground {
+  display: none;
   z-index: 999;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+#modalBackground .login-modal-container {
+  z-index: 100000;
+  position: absolute;
+  top: 8.75rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 25rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+#modalBackground .login-modal-container .login-title-container {
+  padding: 1rem 1.25rem;
+}
+#modalBackground
+  .login-modal-container
+  .login-title-container
+  .login-title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modalBackground
+  .login-modal-container
+  .login-title-container
+  .login-title-box
+  span {
+  font-size: 1.2rem;
+}
+#modalBackground
+  .login-modal-container
+  .login-title-container
+  .login-title-box
+  button {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.25rem;
+  text-align: right;
+  font-size: 1.5rem;
+  color: rgb(153, 153, 153);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.login-desc-container h1 {
+  margin-top: 1.25rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.625rem;
+  font-weight: bold;
+  color: #333;
+}
+.login-desc-container h2 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+.login-input-container {
+  margin: 1.25rem;
+}
+.login-input-container p {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  color: #969696;
+}
+.login-input-container .email-form input {
+  display: block;
+  margin-top: 0.688rem;
+  padding: 0 0.938rem;
+  width: 22.5rem;
+  height: 3.125rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.313rem;
+}
+.login-input-container .email-form input::placeholder {
+  color: #e1e2e3;
+}
+.login-input-container .email-form .submit-btn-box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1.688rem;
+  background-color: #36f;
+}
+.login-input-container .email-form .submit-btn-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.375rem;
+  border-radius: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.login-input-container .email-form .submit-btn-box button span:first-child {
+  margin: 0.625rem;
+  font-size: 1.5rem;
+}
+.login-input-container .email-form::after {
+  display: flex;
+  justify-content: center;
+  content: "or";
+  color: #969696;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0.813rem 0;
+}
+/* --------------PW-Modal-Wrap---------------- */
+.pw-modal-wrap {
+  display: none;
+  position: absolute;
+  top: 21.8rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 1.25rem;
+  width: 25rem;
+  height: 20.313rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+.pw-modal-wrap .pw-modal-container {
+  position: relative;
+}
+.pw-modal-wrap .pw-modal-container .pw-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.969rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.pw-modal-wrap .pw-modal-container #modalCloseBtn {
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+}
+.pw-modal-wrap .pw-modal-container .pw-form {
+  margin-top: 2.188rem;
+  margin-bottom: 1.5rem;
+}
+.pw-modal-wrap .pw-modal-container .pw-form label {
+  display: block;
+  font-size: 0.875rem;
+  color: #767676;
+}
+.pw-modal-wrap .pw-modal-container .pw-form #pwInputBox {
+  margin-top: 0.625rem;
+  padding: 0 0.625rem;
+  width: 100%;
+  height: 3.125rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.313rem;
+}
+.pw-modal-wrap .pw-modal-container .pw-form #pwInputBox::placeholder {
+  font-size: 0.938rem;
+  color: #767676;
+}
+.pw-modal-wrap .pw-modal-container .pw-form .login-btn-box {
+  height: 3.375rem;
+  margin-top: 2.313rem;
+  background-color: #36f;
+  border-radius: 1.688rem;
+}
+.pw-modal-wrap .pw-modal-container .pw-form .login-btn-box #loginBtn {
+  text-align: center;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  font-weight: bold;
+  color: #fff;
+}
+.pw-modal-wrap .pw-modal-container .pw-reset-btn-box {
+  text-align: center;
+}
+.pw-modal-wrap .pw-modal-container .pw-reset-btn-box #resetBtn {
+  font-size: 0.875rem;
+  color: #36f;
+}
+/* ------------------------------------------ */
+.login-input-container .continue {
+  text-align: center;
+  margin-bottom: 1.063rem;
+  font-size: 0.875rem;
+  color: #e1e2e3;
+}
+.login-input-container .social-login {
+  display: flex;
+  justify-content: space-between;
+}
+.login-input-container .social-login li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 1.063rem 0.5rem 1.063rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 50%;
+  color: #fff;
+}
+.login-input-container .social-login li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.login-input-container .social-login li:nth-child(1) {
+  background-color: #fee500;
+}
+.login-input-container .social-login li:nth-child(2) {
+  background-color: #1877f2;
+  color: #fff;
+}
+.login-input-container .social-login li:nth-child(2) button {
+  font-size: 1.375rem;
+  color: #fff;
+}
+.login-input-container .social-login li:nth-child(3) button {
+  font-size: 1.375rem;
+}
+.login-input-container .social-login li:nth-child(4) button {
+  background-color: #000;
+  font-size: 1.375rem;
+  color: #fff;
+}
+.login-input-container .social-login li button img {
+  border-radius: 50%;
+}
+.login-input-container .social-login li button img:nth-child(1) {
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.login-input-container .social-login-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-input-container .social-login-title li {
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: #666;
+}
+.login-input-container .info-desc {
+  text-align: center;
+  margin-top: 1.625rem;
+  line-height: 1.125rem;
+  font-size: 0.69rem;
+  color: #999;
+}
+.login-input-container .info-desc a {
+  color: #3336ff;
+  text-decoration: underline;
+}
+/* ------------------------------------------------------------------------ */
+header {
+  z-index: 99;
   position: fixed;
   top: 0;
   display: flex;
@@ -76,7 +345,7 @@ main {
   display: flex;
 }
 .header-container .icon-company-container .header-icon li {
-  padding-right: var(--icon-padding-right);
+  /* padding-right: var(--icon-padding-right); */
 }
 .header-container .icon-company-container .header-icon li:last-child {
   display: flex;
@@ -98,4 +367,8 @@ main {
 .header-container .icon-company-container .company-service-btn button {
   border-radius: inherit;
   color: #666;
+}
+#signUpBtn {
+  display: block;
+  width: inherit;
 }
