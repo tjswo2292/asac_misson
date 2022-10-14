@@ -16,6 +16,7 @@ function closeModal() {
 }
 function closePwModal() {
   $modalBack.style.display = "none";
+  $loginModalContainer.style.display = "block";
 }
 function inputPw(e) {
   e.preventDefault();
