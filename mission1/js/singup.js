@@ -1,4 +1,3 @@
-// 함수는 되도록 한 가지 일만
 const $signUp = document.querySelector("#signUpBtnBox");
 const $modalBack = document.querySelector("#modalBackground");
 const $loginModalContainer = document.querySelector(".login-modal-container");
@@ -7,7 +6,13 @@ const $continueEmail = document.querySelector("#continueEmail");
 const $pwModalWrap = document.querySelector(".pw-modal-wrap");
 const $pwModalCloseBtn = document.querySelector("#pwModalCloseBtn");
 
+const $pwChangeBtn = document.querySelector("#resetBtn");
+const $pwChange = document.querySelector(".pw-change-modal-wrap");
+
+const $wrap = document.querySelector("body");
+
 function showLogin(e) {
+  $wrap.style.overflow = "hidden";
   $modalBack.style.display = "block";
 }
 
@@ -28,5 +33,8 @@ $signUp.addEventListener("click", showLogin);
 $modalCloseBtn.addEventListener("click", closeModal);
 $pwModalCloseBtn.addEventListener("click", closePwModal);
 $continueEmail.addEventListener("click", inputPw);
-
-// #FEE500
+$pwChangeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  $pwModalWrap.style.display = "none";
+  $pwChange.style.display = "block";
+});

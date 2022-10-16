@@ -18,6 +18,7 @@ id : camel case -->
     <link rel="stylesheet" href="./Style/contentsRe.css" />
     <link rel="stylesheet" href="./Style/subscribe.css" />
     <link rel="stylesheet" href="./Style/jobs.css" />
+    <link rel="stylesheet" href="./Style/pwreset.css" />
     <script
       src="https://kit.fontawesome.com/1022f3d0fb.js"
       crossorigin="anonymous"
@@ -48,7 +49,7 @@ id : camel case -->
         <div class="login-input-container">
           <p>이메일</p>
           <form class="email-form">
-            <input type="text" placeholder="이메일을 입력해 주세요" />
+            <input type="email" placeholder="이메일을 입력해 주세요" />
             <div class="submit-btn-box">
               <button type="submit" id="continueEmail">
                 <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
@@ -122,12 +123,12 @@ id : camel case -->
           </div>
         </div>
       </div>
-      <!-- <div class="find-pw-modal-wrap">
-        <div class="find-pw-modal-container">
+      <div class="pw-change-modal-wrap">
+        <div class="pw-modal-container">
           <div class="pw-title">
-            <span>비밀번호 입력 </span>
+            <span>비밀번호 재설정</span>
           </div>
-          <button type="click" id="modalCloseBtn">
+          <button type="click" id="pwModalCloseBtn">
             <i class="fa fa-times" aria-hidden="true"></i>
           </button>
           <form class="pw-form">
@@ -136,14 +137,14 @@ id : camel case -->
               <input id="pwInputBox" type="password" placeholder="비밀번호" />
             </div>
             <div class="login-btn-box">
-              <button id="loginBtn" type="submit">로그인</button>
+              <button id="loginBtn" type="submit">전송</button>
             </div>
           </form>
-          <div class="pw-reset-btn-box">
-            <button type="click" id="resetBtn">비밀번호 초기화/변경</button>
+          <div class="reset-pw-desc">
+            <span>*비밀번호를 재설정 할 이메일 계정을 입력해주세요</span>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
     <div class="wrap">
       <header>
@@ -206,6 +207,11 @@ id : camel case -->
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </button>
           <ul class="main-img-container" data-position="0">
+            <li class="slide-content">
+              <div class="main-img-box">
+                <img src="./img/mainImage.webp" alt="광고이미지" />
+              </div>
+            </li>
             <li class="slide-content">
               <div class="main-img-box">
                 <img src="./img/mainImage.webp" alt="광고이미지" />
@@ -669,5 +675,5 @@ id : camel case -->
   </body>
   <script src="./js/index.js"></script>
   <script src="./js/singup.js"></script>
-  <script src="./js/imgSlide.js"></script>
+  <!-- <script src="./js/imgSlide.js"></script> -->
 </html>

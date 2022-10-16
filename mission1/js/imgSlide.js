@@ -1,35 +1,24 @@
-const $imgContainer = document.querySelector(".main-img-container");
+// 이미지 콘텐츠가 움직이게
+// 버튼 클릭마다 이미지 인덱스를 다르게 변경해줘야 함
+
 const $slideContent = document.querySelectorAll(".slide-content");
-const $prevBtn = document.querySelector(".prev-btn");
 const $nextBtn = document.querySelector(".next-btn");
+const $prevBtn = document.querySelector("prev-btn");
 
 let slideLen = $slideContent.length;
-let slideWidth = 1097;
-let slideSpeed = 300;
-
-let firstChild = $imgContainer.firstElementChild;
-let lastChild = $imgContainer.lastElementChild;
-let cloneFirst = firstChild.cloneNode(true);
-let cloneLast = lastChild.cloneNode(true);
-
-// $imgContainer.appendChild(cloneFirst);
-// $imgContainer.insertBefore(cloneLast, firstChild);
-
-let curIndex = 0; // img index 나타내기
+let slideWidth = 1060;
+let curIndex = 0;
 
 $nextBtn.addEventListener("click", () => {
   if (curIndex <= slideLen - 1) {
-    // 마지막 이미지까지 조건 실행
-    $imgContainer.style.transition = `${slideSpeed}ms`;
-    $imgContainer.style.transform = `translateX(-${
-      slideWidth + (curIndex + 2)
-    }px)`;
-  } else if (curIndex == slideLen - 1) {
-    // 마지막 이미지면
-    setTimeout(() => {
-      $slideList.style.transition = "0ms";
-      $slideList.style.transform = `translate3d(-${slideWidth}px, 0px, 0px)`;
-    }, slideSpeed);
-    curIndex = -1;
+    $slideContent[curIndex].style.transition = "300ms ease-in-out";
+    $slideContent[curIndex].style.transform = `translateX(-${
+      slideWidth * (curIndex + 2)
+    })`;
   }
 });
+
+// 모르는 거
+// 1. main-img-container가 움직이는건지 그 안에있는 li가 움직이는 건지
+// 2. 만약 li가 움직이는거면 위 방법은 왜 안되는지
+// 3. 만약 main-img-container가 움직이는 거면 어떤 방식으로 움직이는 건지

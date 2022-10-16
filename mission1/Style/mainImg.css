@@ -4,7 +4,7 @@
   margin-top: 25px;
 }
 .main-img .prev-btn {
-  z-index: 9999;
+  z-index: 999;
   position: absolute;
   top: 130px;
   left: 250px;
@@ -15,7 +15,7 @@
   opacity: 0.5;
 }
 .main-img .next-btn {
-  z-index: 9999;
+  z-index: 999;
   position: absolute;
   top: 130px;
   right: 280px;
@@ -29,11 +29,11 @@
   display: flex;
   overflow-x: hidden;
   justify-content: space-between;
+  width: 1060px;
 }
 .main-img-container li {
   display: flex;
-  width: 1060px;
-  margin: 10px;
+  width: inherit;
 }
 .main-img-container li .main-img-box {
   width: inherit;

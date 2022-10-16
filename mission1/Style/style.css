@@ -13,7 +13,7 @@ body {
 }
 #modalBackground {
   display: none;
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
