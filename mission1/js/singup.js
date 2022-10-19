@@ -33,8 +33,7 @@ $signUp.addEventListener("click", showLogin);
 $modalCloseBtn.addEventListener("click", closeModal);
 $pwModalCloseBtn.addEventListener("click", closePwModal);
 $continueEmail.addEventListener("click", inputPw);
-$pwChangeBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+$pwChangeBtn.addEventListener("click", () => {
   $pwModalWrap.style.display = "none";
   $pwChange.style.display = "block";
 });
