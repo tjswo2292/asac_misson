@@ -11,6 +11,7 @@
 }
 .insight-card-container li {
   width: 24%;
+  margin-bottom: 1.5rem;
 }
 .insight-card-container .card-img-container {
   border-radius: 0.313rem;

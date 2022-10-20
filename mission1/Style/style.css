@@ -168,7 +168,7 @@ body {
   font-size: 0.875rem;
   color: #767676;
 }
-.pw-modal-wrap .pw-modal-container .pw-form #pwInputBox {
+.pw-modal-wrap .pw-modal-container .pw-form .pwInputBox {
   margin-top: 0.625rem;
   padding: 0 0.625rem;
   width: 100%;
@@ -176,7 +176,7 @@ body {
   border: 1px solid #e1e2e3;
   border-radius: 0.313rem;
 }
-.pw-modal-wrap .pw-modal-container .pw-form #pwInputBox::placeholder {
+.pw-modal-wrap .pw-modal-container .pw-form .pwInputBox::placeholder {
   font-size: 0.938rem;
   color: #767676;
 }
@@ -186,7 +186,7 @@ body {
   background-color: #36f;
   border-radius: 1.688rem;
 }
-.pw-modal-wrap .pw-modal-container .pw-form .login-btn-box #loginBtn {
+.pw-modal-wrap .pw-modal-container .pw-form .login-btn-box .loginBtn {
   text-align: center;
   width: 100%;
   height: inherit;

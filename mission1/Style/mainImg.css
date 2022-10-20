@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  overflow-x: hidden;
 }
 .main-img .prev-btn {
   z-index: 999;
   position: absolute;
-  top: 130px;
+  top: 230px;
   left: 250px;
   width: 1.875rem;
   height: 3.75rem;
@@ -17,8 +18,8 @@
 .main-img .next-btn {
   z-index: 999;
   position: absolute;
-  top: 130px;
-  right: 280px;
+  top: 230px;
+  right: 250px;
   width: 1.875rem;
   height: 3.75rem;
   border-radius: 0.938rem;
@@ -27,16 +28,12 @@
 }
 .main-img-container {
   display: flex;
-  overflow-x: hidden;
-  justify-content: space-between;
-  width: 1060px;
 }
 .main-img-container li {
-  display: flex;
-  width: inherit;
+  margin: 0 1.875rem;
 }
 .main-img-container li .main-img-box {
-  width: inherit;
+  width: 66.25rem;
 }
 .main-img-container li .prev-img-btn {
   margin-right: 0.625rem;
