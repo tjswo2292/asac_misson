@@ -1,13 +1,14 @@
 .main-img {
   display: flex;
   justify-content: center;
+  position: relative;
   margin-top: 25px;
   overflow-x: hidden;
 }
 .main-img .prev-btn {
   z-index: 999;
   position: absolute;
-  top: 230px;
+  top: 135px;
   left: 250px;
   width: 1.875rem;
   height: 3.75rem;
@@ -18,7 +19,7 @@
 .main-img .next-btn {
   z-index: 999;
   position: absolute;
-  top: 230px;
+  top: 135px;
   right: 250px;
   width: 1.875rem;
   height: 3.75rem;

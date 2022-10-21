@@ -104,19 +104,33 @@
   height: 2.5rem;
   font-size: 0.875rem;
 }
+.welfware-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.welfware-wrap button {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 50%;
+}
+.welfware-wrap button:nth-child(1) {
+  display: none;
+}
+.welfware-wrap .welfware-container {
+  overflow: hidden;
+}
 .job-category-container .welfware-choice-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
   margin: 0 auto;
-  padding-top: 1.25rem;
   width: var(--init-width);
   border-top: 1px solid #ececec;
 }
 .job-category-container .welfware-choice-list li {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 0.5rem;
   border-radius: 1.25rem;
   background-color: #f3f2fb;

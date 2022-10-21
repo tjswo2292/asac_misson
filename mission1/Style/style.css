@@ -329,6 +329,7 @@ main {
 .header-container .header-menu {
   display: flex;
   align-items: center;
+  height: 100%;
   font-size: var(--header-font-size);
 }
 .header-container .header-menu li a {
